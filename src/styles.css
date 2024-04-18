@@ -62,13 +62,13 @@ button.current {
     gap: 25px;
 }
 
-#content div div {
-    width: 70%;
-    width: 70%;
+#content > div > div {
+    width: min(70%, 600px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    padding: 15px 0;
 }
 
 h1 {
@@ -76,6 +76,7 @@ h1 {
     font-size: 48px;
     margin: 0px;
     padding: 0px;
+    text-shadow: 4px 4px goldenrod;
 }
 
 h2 {
@@ -84,17 +85,22 @@ h2 {
     padding: 0px;
 }
 
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
 .homeimage {
     width: 400px !important;
-    height: 400px;
-    background-image: url(images/homeimage2.jpg);
+    height: 300px;
+    background-image: url(images/homeimage.jpg);
     background-size:cover;
     border-radius: 5px;
     border: 2px solid black;
 }
 
 hr {
-    width: 40%;
+    width: min(40%, 400px);
     border: 1px solid black;
     margin: 10px 0;
 }
@@ -107,6 +113,43 @@ ul {
 li {
     list-style: none;
     text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.specials {
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+
+.spItem {
+    align-self: stretch;
+    padding: 10px 40px;
+}
+
+.spItem p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.spPrice {
+    text-align: right;
+    font-weight: bold;
+}
+
+.dishcontainer {
+    align-self: stretch;
+    padding: 20px 40px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.dish p {
     padding: 0px;
     margin: 0px;
 }

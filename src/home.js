@@ -3,7 +3,7 @@ function Home() {
     const page = document.createElement('div');
 
     const restaurantName = document.createElement('h1');
-    restaurantName.textContent = "XERXES' TAVERN";
+    restaurantName.textContent = "MISHA'S TAVERN";
 
     const image = document.createElement('div');
     image.classList.add('homeimage');
@@ -12,8 +12,8 @@ function Home() {
     const aboutHeader = document.createElement('h2');
     const aboutText = document.createElement('p');
     about.classList.add('about');
-    aboutHeader.textContent = "SERVED EVERY DAY SINCE 2135"
-    aboutText.textContent = "Xerxe's opened on Thanksgiving Day 2135, Chef Axelomus IV began by cooking food out of a small kitchen in Xethelon Spaceport, Agnorica. Today, this beloved restaurant have become a frequent stops to integalactic travellers who enjoys classic organic dishes.";
+    aboutHeader.textContent = "SERVED EVERY DAY SINCE 348"
+    aboutText.textContent = "Misha's opened on the winter of 348th nearing the end of the Arcane War. A young villager, Misha began by baking bread to feed soldiers stranded during the war for free. Today 45 years later, this restaurant have become a popular stopping spot for adventurers.";
     about.appendChild(aboutHeader);
     about.appendChild(aboutText);
 
@@ -45,7 +45,7 @@ function Home() {
     const locationHeader = document.createElement('h2');
     locationHeader.textContent = "LOCATION";
     const address = document.createElement('p');
-    address.textContent = "Q3340, Mark III Xethelon Spaceport, Agnorica, Ixios 344LY";
+    address.textContent = "12 Dandelion Road, Village of Mel, South Semuria";
 
     location.appendChild(locationHeader);
     location.appendChild(address);
