@@ -50,7 +50,9 @@ function Home() {
     page.appendChild(time);
     page.appendChild(location);
 
-    return {page};
+    const getPage = () => page;
+
+    return {getPage};
 }
 
-export default Home().page;
+export default Home().getPage();
