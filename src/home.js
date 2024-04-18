@@ -29,7 +29,7 @@ function Home() {
         'Wednesday: 9AM - 10PM',
         'Thursday: 9AM - 10PM',
         'Friday: 9AM - 10PM',
-        'Saturday: 2PM - 10PM'
+        'Saturday: 2PM - 4PM',
     ]
 
     hours.forEach(function(days){

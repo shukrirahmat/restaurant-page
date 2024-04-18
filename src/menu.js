@@ -17,7 +17,7 @@ function Menu() {
     ).getSpecial();
     const sp3 = specialsCreator(
         "Kraken Soup",
-        'The broth is popular among all ages, and it is also the favourite dish of Sir Simon Arthurius himself!',
+        'The specially made broth took several weeks to prepare, becoming very popular among all ages. The favourite dish of Sir Simon Arthurius himself!',
         '800 dias'
     ).getSpecial();
     const sp4 = specialsCreator(
