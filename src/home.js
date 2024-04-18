@@ -3,13 +3,19 @@ function Home() {
     const page = document.createElement('div');
 
     const restaurantName = document.createElement('h1');
-    restaurantName.textContent = 'RESTAURANT NAME';
+    restaurantName.textContent = "XERXES' TAVERN";
 
     const image = document.createElement('div');
-    image.textContent = 'PLACEHOLDER IMAGE';
+    image.classList.add('homeimage');
 
-    const about = document.createElement('p');
-    about.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum excepturi expedita alias. Numquam accusamus voluptates ratione nobis possimus consequuntur, molestiae excepturi itaque hic necessitatibus eum natus adipisci commodi. Nulla.';
+    const about = document.createElement('div');
+    const aboutHeader = document.createElement('h2');
+    const aboutText = document.createElement('p');
+    about.classList.add('about');
+    aboutHeader.textContent = "SERVED EVERY DAY SINCE 2135"
+    aboutText.textContent = "Xerxe's opened on Thanksgiving Day 2135, Chef Axelomus IV began by cooking food out of a small kitchen in Xethelon Spaceport, Agnorica. Today, this beloved restaurant have become a frequent stops to integalactic travellers who enjoys classic organic dishes.";
+    about.appendChild(aboutHeader);
+    about.appendChild(aboutText);
 
     const time = document.createElement('div');
     const timeHeader = document.createElement('h2');
@@ -39,15 +45,18 @@ function Home() {
     const locationHeader = document.createElement('h2');
     locationHeader.textContent = "LOCATION";
     const address = document.createElement('p');
-    address.textContent = "Derry, Maine";
+    address.textContent = "Q3340, Mark III Xethelon Spaceport, Agnorica, Ixios 344LY";
 
     location.appendChild(locationHeader);
     location.appendChild(address);
 
     page.appendChild(restaurantName);
     page.appendChild(image);
+    page.appendChild(document.createElement('hr'));
     page.appendChild(about);
+    page.appendChild(document.createElement('hr'));
     page.appendChild(time);
+    page.appendChild(document.createElement('hr'));
     page.appendChild(location);
 
     const getPage = () => page;
