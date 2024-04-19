@@ -33,7 +33,7 @@ function Menu() {
 
     const otherDishes = menuCreator(
         'OTHER POPULAR DISHES',
-        ['Fried Mandrake', 'Great Boar Stew', 'Dragon Omelette', "Hellfire Pepper Chicken", "Hydra Head", "Dwarven Cake", "Slime Sandwich", "Traveler's Pie"],
+        ['Fried Mandrake', 'Great Boar Stew', 'Dragon Omelette', "Hellfire Pepper Chicken", "Hydra Head Curry", "Dwarven Cake", "Slime Sandwich", "Traveler's Pie"],
         ['200', '860', '600', '480', '570', '150', '230', '80']
     ).getMenu();
 

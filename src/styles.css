@@ -1,12 +1,15 @@
 @font-face {
     font-family: 'Signika';
-    src: url(fonts/Signika-Regular.ttf),
-        url(fonts/Signika-Bold.ttf);
+    src: url(fonts/Signika-Regular.woff),
+        url(fonts/Signika-Bold.woff),
+        url(fonts/Signika-Regular.woff2),
+        url(fonts/Signika-Bold.woff2);
 }
 
 @font-face {
     font-family: 'YatraOne';
-    src: url(fonts/YatraOne-Regular.ttf);
+    src: url(fonts/YatraOne-Regular.woff),
+        url(fonts/YatraOne-Regular.woff2);
 }
 
 * {
@@ -14,7 +17,7 @@
 }
 
 body {
-    background-color: rgb(15, 30, 30);
+    background-color: rgb(25, 0, 25);
     padding: 10px 200px;
     display: flex;
     flex-direction: column;
@@ -62,7 +65,7 @@ button.current {
     gap: 25px;
 }
 
-#content > div > div {
+#content>div>div {
     width: min(70%, 600px);
     display: flex;
     flex-direction: column;
@@ -72,7 +75,7 @@ button.current {
 }
 
 h1 {
-    font-family: 'YatraOne',sans-serif;
+    font-family: 'YatraOne', sans-serif;
     font-size: 48px;
     margin: 0px;
     padding: 0px;
@@ -80,7 +83,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'YatraOne',sans-serif;
+    font-family: 'YatraOne', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -94,14 +97,14 @@ h3 {
     width: 400px !important;
     height: 300px;
     background-image: url(images/homeimage.jpg);
-    background-size:cover;
+    background-size: cover;
     border-radius: 5px;
     border: 2px solid black;
 }
 
 hr {
     width: min(40%, 400px);
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     margin: 10px 0;
 }
 
@@ -146,10 +149,14 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .dish p {
     padding: 0px;
     margin: 0px;
+}
+
+.staff {
+    padding: 20px 0;
 }
